@@ -1,0 +1,22 @@
+* HaskellTest
+** A small implementation of Tic-Tac-Toe in Haskell with features: [4/6]
++ [X] Networking
+  specify a port and connect via ~telnet~ to play 
++ [X] CLI Parsing
+  using ~Options.Applicative~
++ [X] Too much record manipulation
+  I love me some lenses
++ [ ] Export of common libraries so source files don't start with 20 lines of import +statements+ expressions
+  **nope**
++ [ ] Formatting using a formatter
+  no
++ [X] Everything was written in emacs
+  [[https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F1jPmnDZ6ab8%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=a7d43e74c29690bee3b071cdb9be2f818dfa183cfc1ec4fb74bd988d1fbe6200&ipo=images][amen]]
+** To run
+once again, use the best [[https://nixos.org/download/][package manager]] to exist (so far) and run the beloved
+
+~nix-shell cabal.nix~
+
+~cabal configure~
+
+~cabal run HPNW -- --port 5000~
